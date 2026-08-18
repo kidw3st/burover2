@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Авторитет права · Юридическое бюро, Пермь</title>
+<meta name="description" content="Юридическое бюро «Авторитет права», Пермь. Банкротство физических лиц, взыскание задолженности, юридическое сопровождение бизнеса. Основатель: Елена Бабукова, более 17 лет практики.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230D0D0C'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' fill='%23C89748' text-anchor='middle'%3E%D0%90%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=2">
+</head>
+<body class="page-home">
+<!--
+THESIS: премиальный юридический дом в Перми, поданный как дорогое печатное издание:
+слоновая кость против угольных слайдов, антиква капителью, каллиграфический росчерк.
+Отказ от категорийного шаблона «3 карточки + иконки + градиентный герой».
+OWN-WORLD: фарфор #F4F0E8, уголь #0D0D0C, многослойное золото F3D98C→9B6129 только
+как тонкая линия и росчерк; Cormorant Garamond caps, Ballet script, Oswald микротип;
+острые углы, ноль теней, волосяные линии, меню-листы вместо карточек.
+STORY: посетитель узнаёт бюро, верит биографии основателя и реальным фото
+деятельности, понимает три практики и записывается на консультацию.
+FIRST VIEWPORT: угольный слайд; слева росчерк «юридическое бюро», гигантское
+АВТОРИТЕТ ПРАВА, строка Освальдом, кнопка записи; справа портрет с тёмной вуалью
+в золотой раме; внизу волосяная строка фактов.
+FORM: дорогой журнальный лендинг, закреплён брендовыми доками клиента (brief-pinned).
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish
+review, the verdict, and DESIGN.md
+-->
+
+<header class="site-head" id="top">
+  <div class="wrap head-row">
+    <a class="brand" href="#top" aria-label="Авторитет права, на главную">
+      <span class="brand-name">Авторитет права</span>
+    </a>
+    <nav class="head-nav" aria-label="Основная навигация">
+      <a href="#osnovatel">О бюро</a>
+      <a href="#praktiki">Практики</a>
+      <a href="#predprinimateli">Защита предпринимателей</a>
+      <a href="#obshestvo">Общественная деятельность</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="head-cta" href="#kontakty">Записаться</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <nav aria-label="Мобильная навигация">
+    <a href="#osnovatel">О бюро</a>
+    <a href="#praktiki">Практики</a>
+    <a href="#predprinimateli">Защита предпринимателей</a>
+    <a href="#obshestvo">Общественная деятельность</a>
+    <a href="#kontakty">Контакты</a>
+    <a class="mobile-menu-cta" href="#kontakty">Записаться на консультацию</a>
+  </nav>
+</div>
+
+<main>
+
+  <!-- ГЕРОЙ -->
+  <section class="hero" aria-label="Юридическое бюро Авторитет права">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="script gold-script hero-script reveal"><span class="fl-top" aria-hidden="true"><svg viewBox="0 0 180 26"><defs><linearGradient id="flg-t" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F3D98C"/><stop offset=".5" stop-color="#C89748"/><stop offset="1" stop-color="#9B6129"/></linearGradient></defs><path id="flh" d="M12 16 C20 6 33 7 36 14 C38 19 33 23 29 21 C25 19 27 13 33 12 C51 8 66 18 84 14" fill="none" stroke="url(#flg-t)" stroke-width="1.8" stroke-linecap="round"/><use href="#flh" transform="translate(180,0) scale(-1,1)"/><rect x="87.5" y="11.5" width="5" height="5" transform="rotate(45 90 14)" fill="url(#flg-t)"/></svg></span><svg class="fl" viewBox="0 0 140 40" aria-hidden="true"><defs><linearGradient id="flg-d" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F3D98C"/><stop offset=".5" stop-color="#C89748"/><stop offset="1" stop-color="#9B6129"/></linearGradient></defs><path d="M6 22 C11 12 23 11 27 19 C30 25 25 31 20 29 C15 27 17 20 24 18 C42 12 60 30 80 24 C100 18 114 15 136 22" fill="none" stroke="url(#flg-d)" stroke-width="2" stroke-linecap="round"/></svg>Юридическое Бюро<svg class="fl fl-r fl-sym" viewBox="0 0 140 40" aria-hidden="true"><path d="M6 22 C11 12 23 11 27 19 C30 25 25 31 20 29 C15 27 17 20 24 18 C42 12 60 30 80 24 C100 18 114 15 136 22" fill="none" stroke="url(#flg-d)" stroke-width="2" stroke-linecap="round"/></svg></p>
+        <h1 class="hero-title">
+          <span class="reveal d1">Авторитет</span>
+          <span class="reveal d2">права</span>
+        </h1>
+        <p class="hero-line reveal d3">Защита бизнеса и граждан в долговых спорах · г. Пермь</p>
+        <div class="hero-actions reveal d4">
+          <a class="btn btn-gold" href="#kontakty">Записаться на консультацию</a>
+          <a class="link-quiet" href="#praktiki">Практики бюро</a>
+        </div>
+      </div>
+      <figure class="hero-photo reveal d2">
+        <span class="media" style="aspect-ratio:1024/1280">
+          <img src="photoobsh/photo_1_2026-08-18_11-00-20.jpg" alt="Елена Бабукова, основатель юридического бюро «Авторитет права»" fetchpriority="high">
+        </span>
+        <span class="frame" aria-hidden="true"></span>
+        <figcaption class="side-caption">Елена Бабукова · основатель бюро</figcaption>
+      </figure>
+    </div>
+    <div class="wrap hero-facts reveal d5">
+      <p>Более 17 лет в сфере долговых обязательств</p>
+      <p>Путь от судебного пристава-исполнителя до начальника отдела управления</p>
+      <p>Сопровождение каждого дела до результата</p>
+    </div>
+  </section>
+
+  <!-- ОСНОВАТЕЛЬ -->
+  <section class="founder section-light" id="osnovatel">
+    <div class="wrap founder-grid">
+      <figure class="founder-photo">
+        <span class="media" style="aspect-ratio:853/1280">
+          <img src="photoobsh/photo_15_2026-08-18_11-00-20.jpg" alt="Елена Бабукова в рабочем кабинете" loading="lazy">
+        </span>
+        <span class="frame frame-dark" aria-hidden="true"></span>
+      </figure>
+      <div class="founder-copy">
+        <p class="script gold-script founder-script reveal">Елена Бабукова<svg class="fl fl-r" viewBox="0 0 140 40" aria-hidden="true"><defs><linearGradient id="flg-l" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C89748"/><stop offset=".5" stop-color="#9B6129"/><stop offset="1" stop-color="#63391E"/></linearGradient></defs><path d="M6 22 C11 12 23 11 27 19 C30 25 25 31 20 29 C15 27 17 20 24 18 C42 12 60 30 80 24 C100 18 114 15 136 22" fill="none" stroke="url(#flg-l)" stroke-width="2" stroke-linecap="round"/></svg></p>
+        <h2 class="h-display reveal">Основатель и руководитель бюро</h2>
+        <div class="founder-text">
+          <p>Более 17 лет я работаю в сфере долговых обязательств. Я прошла путь от рядового судебного пристава-исполнителя до начальника отдела судебных приставов и начальника отдела организации исполнительного производства управления, затем возглавила юридическое агентство частной практики.</p>
+          <p>Я знаю эту сферу со всех сторон: как мыслят кредиторы, как принимают решения суды, где скрываются риски и где находятся реальные возможности. Это знание позволяет выстраивать точную стратегию на каждом этапе дела.</p>
+        </div>
+        <ol class="path-list" aria-label="Профессиональный путь">
+          <li>Судебный пристав-исполнитель</li>
+          <li>Начальник отдела судебных приставов</li>
+          <li>Начальник отдела организации исполнительного производства управления</li>
+          <li>Директор юридического агентства</li>
+          <li>Основатель бюро «Авторитет права»</li>
+        </ol>
+      </div>
+    </div>
+    <div class="wrap principles">
+      <h3 class="h-small">Принципы работы</h3>
+      <ul class="menu-list two-col">
+        <li>Предвидим проблемы и предотвращаем их заранее, а не решаем на бегу</li>
+        <li>Индивидуальная стратегия для каждого дела, без шаблонов</li>
+        <li>Полная прозрачность: все шаги, риски и расходы известны заранее</li>
+        <li>Работа строго по закону, без сомнительных схем</li>
+        <li>Личный контроль руководителя на ключевых решениях</li>
+        <li>Конфиденциальность и сохранение коммерческой тайны</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ПРАКТИКИ -->
+  <section class="practices section-light" id="praktiki">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="script ink-script reveal">Три направления</p>
+        <h2 class="h-display reveal">Практики бюро</h2>
+      </header>
+
+      <!-- 1. Банкротство физических лиц -->
+      <article class="practice" id="bankrotstvo">
+        <div class="practice-head">
+          <p class="script gold-script practice-script">Списание долгов</p>
+          <h3 class="h-practice">Банкротство физических лиц</h3>
+          <figure class="practice-photo">
+            <span class="media" style="aspect-ratio:4/5">
+              <img src="photoobsh/photo_9_2026-08-18_11-00-20.jpg" alt="Елена Бабукова: истина в законе, сила в «Авторитете»" loading="lazy">
+            </span>
+            <span class="frame frame-dark" aria-hidden="true"></span>
+          </figure>
+          <a class="link-ink" href="#kontakty">Записаться на консультацию</a>
+        </div>
+        <div class="practice-body">
+          <p class="lead">Кредитная нагрузка, поручительство, давление коллекторов: из этой ситуации есть законный выход. Мы даём не надежду, а юридически обоснованный план. Закон 127-ФЗ предусматривает два пути.</p>
+          <div class="compare" role="table" aria-label="Сравнение судебного и внесудебного банкротства">
+            <div class="compare-row compare-head" role="row">
+              <p role="columnheader">Судебное банкротство</p>
+              <p role="columnheader">Внесудебное, через МФЦ</p>
+            </div>
+            <div class="compare-row" role="row">
+              <p role="cell" data-col="Судебное банкротство"><span class="cell-label">Сумма долга</span>от 500 тысяч рублей или наличие имущества</p>
+              <p role="cell" data-col="Внесудебное, через МФЦ"><span class="cell-label">Сумма долга</span>от 25 тысяч до 1 миллиона рублей</p>
+            </div>
+            <div class="compare-row" role="row">
+              <p role="cell" data-col="Судебное банкротство"><span class="cell-label">Процедура</span>процесс в арбитражном суде</p>
+              <p role="cell" data-col="Внесудебное, через МФЦ"><span class="cell-label">Процедура</span>без суда, через МФЦ</p>
+            </div>
+            <div class="compare-row" role="row">
+              <p role="cell" data-col="Судебное банкротство"><span class="cell-label">Сопровождение</span>документы, представительство, работа с финансовым управляющим</p>
+              <p role="cell" data-col="Внесудебное, через МФЦ"><span class="cell-label">Сопровождение</span>помощь в сборе документов и подаче заявления</p>
+            </div>
+            <div class="compare-row" role="row">
+              <p role="cell" data-col="Судебное банкротство"><span class="cell-label">Результат</span>защита от коллекторов и приставов с первого дня процедуры</p>
+              <p role="cell" data-col="Внесудебное, через МФЦ"><span class="cell-label">Результат</span>списание долгов по закону 127-ФЗ</p>
+            </div>
+          </div>
+          <p class="note">Оптимальный вариант подберём после бесплатного анализа вашей ситуации.</p>
+        </div>
+      </article>
+
+      <!-- 2. Взыскание -->
+      <article class="practice" id="vzyskanie">
+        <div class="practice-head">
+          <p class="script gold-script practice-script">Возврат средств</p>
+          <h3 class="h-practice">Взыскание задолженности</h3>
+          <figure class="practice-photo">
+            <span class="media" style="aspect-ratio:4/5">
+              <img src="photoobsh/photo_7_2026-08-18_11-00-20.jpg" alt="Елена Бабукова: надёжны, потому что знаем, как побеждать" loading="lazy">
+            </span>
+            <span class="frame frame-dark" aria-hidden="true"></span>
+          </figure>
+          <a class="link-ink" href="#kontakty">Записаться на консультацию</a>
+        </div>
+        <div class="practice-body">
+          <p class="lead">Отсрочки, обещания, пустые гарантии, а деньги так и не поступают на счёт. Эту проблему можно решить юридическими методами, с полным контролем над процессом: от первой претензии до фактического поступления денег.</p>
+          <ol class="stages">
+            <li>
+              <h4>Досудебное урегулирование</h4>
+              <p>Анализ документов и оценка перспектив взыскания. Претензионная работа, переговоры с должником: реструктуризация, отсрочка, мировое соглашение. Юридическое закрепление достигнутых договорённостей.</p>
+            </li>
+            <li>
+              <h4>Судебный процесс</h4>
+              <p>Исковое заявление, расчёт суммы долга, неустоек и процентов. Представительство в судах общей юрисдикции и арбитражных судах, доказательственная база, получение исполнительного листа.</p>
+            </li>
+            <li>
+              <h4>Исполнительное производство</h4>
+              <p>Возбуждение производства, контроль действий пристава: проверка имущественного положения, аресты, розыск счетов и активов. Профессиональное взаимодействие с ФССП и сопровождение до полного исполнения требований.</p>
+            </li>
+          </ol>
+        </div>
+      </article>
+
+      <!-- 3. Юридические лица -->
+      <article class="practice" id="business">
+        <div class="practice-head">
+          <p class="script gold-script practice-script">Защита бизнеса</p>
+          <h3 class="h-practice">Юридическим лицам</h3>
+          <figure class="practice-photo">
+            <span class="media" style="aspect-ratio:4/5">
+              <img src="photoobsh/photo_10_2026-08-18_11-00-20.jpg" alt="Елена Бабукова: мы не даём пустых гарантий, мы даём надёжную стратегию" loading="lazy">
+            </span>
+            <span class="frame frame-dark" aria-hidden="true"></span>
+          </figure>
+          <a class="link-ink" href="#kontakty">Записаться на консультацию</a>
+        </div>
+        <div class="practice-body">
+          <p class="lead">Комплексная юридическая поддержка компаний любого масштаба: от текущего консалтинга до судебных процессов. Наша задача: минимизировать риски и найти законные пути решения даже в самых сложных ситуациях.</p>
+          <ul class="menu-list service-list">
+            <li><strong>Абонентское обслуживание</strong><span>постоянная поддержка бизнеса по фиксированной цене: договоры, претензии, кадровые и корпоративные вопросы</span></li>
+            <li><strong>Защита от субсидиарной ответственности</strong><span>стратегия защиты контролирующих лиц, оспаривание необоснованных требований кредиторов</span></li>
+            <li><strong>Оспаривание сделок</strong><span>анализ рисков, защита законности сделок или оспаривание подозрительных сделок в интересах клиента</span></li>
+            <li><strong>Антикризисное управление</strong><span>реструктуризация обязательств, оптимизация расходов, план финансового оздоровления</span></li>
+            <li><strong>Арбитражные споры</strong><span>корпоративные, договорные и налоговые споры во всех инстанциях</span></li>
+            <li><strong>Дебиторская задолженность</strong><span>претензии, переговоры, медиация, судебное взыскание и контроль исполнения</span></li>
+            <li><strong>Переговоры с банками</strong><span>реструктуризация кредиторской задолженности, изменение графика платежей, отсрочки и рассрочки</span></li>
+            <li><strong>Сопровождение проверок ФНС</strong><span>защита при выездных и камеральных проверках, обжалование решений контролирующих органов</span></li>
+            <li><strong>Банкротство юридических лиц</strong><span>от анализа финансового состояния до завершения конкурсного производства</span></li>
+            <li><strong>Коммерческая недвижимость</strong><span>сделки, аренда, регистрация прав, проверка юридической чистоты объектов</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ЦИТАТА -->
+  <section class="quote-band" aria-label="Слова основателя">
+    <div class="wrap">
+      <figure class="emblem logo-blend reveal" aria-hidden="true">
+        <img src="pics/emblem.png" alt="" loading="lazy" onerror="this.closest('.emblem').hidden=true">
+      </figure>
+      <p class="script gold-script quote-script reveal"><svg class="fl" viewBox="0 0 140 40" aria-hidden="true"><path d="M6 22 C11 12 23 11 27 19 C30 25 25 31 20 29 C15 27 17 20 24 18 C42 12 60 30 80 24 C100 18 114 15 136 22" fill="none" stroke="url(#flg-d)" stroke-width="2" stroke-linecap="round"/></svg>Выход есть всегда<svg class="fl fl-r" viewBox="0 0 140 40" aria-hidden="true"><path d="M6 22 C11 12 23 11 27 19 C30 25 25 31 20 29 C15 27 17 20 24 18 C42 12 60 30 80 24 C100 18 114 15 136 22" fill="none" stroke="url(#flg-d)" stroke-width="2" stroke-linecap="round"/></svg></p>
+      <p class="quote-line reveal">«Вы не плохой человек. Вы просто попали в сложную ситуацию.»</p>
+      <p class="quote-author reveal">Елена Бабукова, основатель бюро</p>
+    </div>
+  </section>
+
+  <!-- ЗАЩИТА ПРЕДПРИНИМАТЕЛЕЙ -->
+  <section class="gallery-section section-dark" id="predprinimateli">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="script gold-script reveal">Диалог бизнеса и власти</p>
+        <h2 class="h-display reveal">Бюро по защите прав предпринимателей</h2>
+        <p class="section-intro">Системная работа в интересах делового сообщества Пермского края: круглые столы Торгово-промышленной палаты, взаимодействие с региональным отделением «Опоры России», рабочие встречи с контрольными и надзорными органами.</p>
+      </header>
+      <div class="mosaic">
+        <figure class="wide"><span class="media" style="aspect-ratio:1280/960"><img src="photoprav/photo_3_2026-08-18_11-06-35.jpg" alt="Участники конференции делового сообщества" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:960/1280"><img src="photoprav/photo_8_2026-08-18_11-06-35.jpg" alt="Участники деловой встречи в парадном зале" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:1280/959"><img src="photoprav/photo_9_2026-08-18_11-06-35.jpg" alt="Заседание в Пермской торгово-промышленной палате" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:1022/1280"><img src="photoprav/photo_2_2026-08-18_11-06-35.jpg" alt="Рабочая встреча" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:1280/960"><img src="photoprav/photo_1_2026-08-18_11-06-35.jpg" alt="Вручение награды на заседании совета" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:853/1280"><img src="photoprav/photo_4_2026-08-18_11-06-35.jpg" alt="Стратегическая сессия «Опоры России»" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:942/1280"><img src="photoprav/photo_6_2026-08-18_11-06-35.jpg" alt="Рабочий визит" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:959/1280"><img src="photoprav/photo_7_2026-08-18_11-06-35.jpg" alt="Приём граждан" loading="lazy"></span></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОБЩЕСТВЕННАЯ ДЕЯТЕЛЬНОСТЬ -->
+  <section class="gallery-section section-light" id="obshestvo">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="script ink-script reveal">За пределами практики</p>
+        <h2 class="h-display reveal">Общественная деятельность</h2>
+        <p class="section-intro">Участие в жизни города и края: конференции, рабочие группы, форумы деловых сообществ и наставничество.</p>
+      </header>
+      <div class="mosaic" id="obshestvo-mosaic">
+        <figure><span class="media" style="aspect-ratio:960/1280"><img src="photoobsh/photo_25_2026-08-18_11-00-20.jpg" alt="Вручение благодарственных писем на юбилее пермского отделения «Опоры России»" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:1280/720"><img src="photoobsh/photo_29_2026-08-18_11-00-21.jpg" alt="Совет регионов «Опоры России», съезд лидеров" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:960/1280"><img src="photoobsh/photo_30_2026-08-18_11-00-21.jpg" alt="Съезд лидеров «Опоры России» и Ассоциации «НП Опора»" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:1179/884"><img src="photoobsh/photo_24_2026-08-18_11-00-20.jpg" alt="Международный круглый стол" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:1280/961"><img src="photoobsh/photo_31_2026-08-18_11-00-21.jpg" alt="Пермский женский бизнес-форум «Предпринимательница»" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:1179/759"><img src="photoobsh/photo_26_2026-08-18_11-00-21.jpg" alt="Вручение благодарственного письма Министерства экономического развития Пермского края" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:720/1280"><img src="photoobsh/photo_32_2026-08-18_11-00-21.jpg" alt="Заседание рабочей группы" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:1280/961"><img src="photoobsh/photo_27_2026-08-18_11-00-21.jpg" alt="Участники форума" loading="lazy"></span></figure>
+        <figure><span class="media" style="aspect-ratio:720/1280"><img src="photoobsh/photo_33_2026-08-18_11-00-21.jpg" alt="Рабочая встреча" loading="lazy"></span></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАК МЫ РАБОТАЕМ -->
+  <section class="process section-sand" id="process">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="script ink-script reveal">Три шага</p>
+        <h2 class="h-display reveal">Как мы работаем</h2>
+      </header>
+      <ol class="steps">
+        <li>
+          <h3>Бесплатная консультация</h3>
+          <p>Встречаемся, изучаем документы и делаем предварительный прогноз по вашей ситуации.</p>
+        </li>
+        <li>
+          <h3>Выбор стратегии</h3>
+          <p>Определяем оптимальный правовой путь и фиксируем стоимость и порядок работы в договоре.</p>
+        </li>
+        <li>
+          <h3>Сопровождение до финала</h3>
+          <p>Ведём дело до решения суда, акта МФЦ о списании долгов или поступления денег на ваш счёт.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="contacts section-dark" id="kontakty">
+    <div class="wrap contacts-grid">
+      <div class="contacts-copy">
+        <p class="script gold-script reveal">Первый шаг</p>
+        <h2 class="h-display reveal">Запишитесь на консультацию</h2>
+        <p class="lead">Первичная консультация бесплатна. Чем раньше вы начнёте действовать, тем больше законных инструментов останется в вашем распоряжении.</p>
+        <dl class="contact-data">
+          <div>
+            <dt>Адрес</dt>
+            <dd>г. Пермь, ул. Ленина, 68</dd>
+          </div>
+          <div>
+            <dt>Приём</dt>
+            <dd>личные встречи по предварительной записи</dd>
+          </div>
+          <div>
+            <dt>Реквизиты</dt>
+            <dd>ИП Бабукова Елена Яковлевна, ИНН 590773603649</dd>
+          </div>
+        </dl>
+      </div>
+      <figure class="qr-figure">
+        <span class="media" style="aspect-ratio:1/1">
+          <img src="photoobsh/photo_19_2026-08-18_11-00-20.jpg" alt="QR-код для связи с бюро" loading="lazy">
+        </span>
+        <figcaption>Наведите камеру телефона, чтобы написать нам</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ОБЯЗАТЕЛЬНАЯ ИНФОРМАЦИЯ -->
+  <section class="legal section-light" aria-label="Обязательная информация">
+    <div class="wrap">
+      <header class="section-head legal-head">
+        <p class="script ink-script reveal">Читайте внимательно</p>
+        <h2 class="h-display reveal">Обязательная информация</h2>
+        <p class="section-intro">Сведения, обязательные по ФЗ-38 «О рекламе». Откройте папку с делом, чтобы прочитать полный текст.</p>
+      </header>
+      <div class="dossiers">
+        <div class="dossier">
+          <button class="folder" type="button" aria-expanded="false" aria-controls="paper-1">
+            <span class="folder-tab">Дело № 1</span>
+            <span class="folder-sheet" aria-hidden="true"></span>
+            <span class="folder-front">
+              <span class="folder-seal" aria-hidden="true">АП</span>
+              <span class="folder-title">О процедуре банкротства граждан</span>
+              <span class="folder-hint">Открыть папку</span>
+            </span>
+          </button>
+          <div class="paper" id="paper-1">
+            <div class="paper-inner">
+              <p class="paper-head">Юридическое бюро «Авторитет права» · ФЗ-38 «О рекламе»</p>
+              <p>Банкротство влечёт негативные последствия: повторная процедура возможна не ранее чем через 5 лет; получение кредитов будет затруднено в течение всего этого срока. Процедура не освобождает от алиментов, субсидиарной ответственности, возмещения вреда жизни и здоровью. Информация не является публичной офертой и не гарантирует полного освобождения от всех долгов: результат зависит от индивидуальных обстоятельств. Перед принятием решения рекомендуем получить консультацию специалиста и ознакомиться с полным перечнем последствий на личном приёме.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dossier">
+          <button class="folder" type="button" aria-expanded="false" aria-controls="paper-2">
+            <span class="folder-tab">Дело № 2</span>
+            <span class="folder-sheet" aria-hidden="true"></span>
+            <span class="folder-front">
+              <span class="folder-seal" aria-hidden="true">АП</span>
+              <span class="folder-title">О взыскании задолженности</span>
+              <span class="folder-hint">Открыть папку</span>
+            </span>
+          </button>
+          <div class="paper" id="paper-2">
+            <div class="paper-inner">
+              <p class="paper-head">Юридическое бюро «Авторитет права» · ФЗ-38 «О рекламе»</p>
+              <p>Результаты взыскания зависят от конкретных обстоятельств: наличия имущества у должника, его платёжеспособности, действий третьих лиц и судебных органов. Бюро не гарантирует стопроцентный возврат средств, но обязуется приложить все законные усилия для достижения положительного результата. Взыскание может быть сопряжено с судебными расходами (госпошлины, оплата услуг представителей), которые в случае проигрыша могут быть возложены на заявителя. О рисках мы подробно информируем до подписания договора.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dossier">
+          <button class="folder" type="button" aria-expanded="false" aria-controls="paper-3">
+            <span class="folder-tab">Дело № 3</span>
+            <span class="folder-sheet" aria-hidden="true"></span>
+            <span class="folder-front">
+              <span class="folder-seal" aria-hidden="true">АП</span>
+              <span class="folder-title">Об услугах для юридических лиц</span>
+              <span class="folder-hint">Открыть папку</span>
+            </span>
+          </button>
+          <div class="paper" id="paper-3">
+            <div class="paper-inner">
+              <p class="paper-head">Юридическое бюро «Авторитет права» · ФЗ-38 «О рекламе»</p>
+              <p>Информация носит ознакомительный характер и не является публичной офертой (ст. 437 ГК РФ). Результаты юридических услуг зависят от множества факторов, включая полноту и достоверность предоставленных документов, позицию суда и действия контрагентов. Банкротство юридических лиц влечёт риски, включая привлечение руководителя к субсидиарной ответственности, утрату контроля над компанией и прекращение деятельности. Услуги оказываются квалифицированными юристами с профильным образованием; информация о специалистах предоставляется по запросу.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img class="foot-emblem logo-blend" src="pics/emblem.png" alt="" loading="lazy" onerror="this.hidden=true">
+      <p class="foot-name">Авторитет права</p>
+      <p class="foot-tag">Юридическое бюро</p>
+      <p class="foot-script script gold-script">Елены Бабуковой</p>
+    </div>
+    <nav class="foot-nav" aria-label="Навигация в подвале">
+      <a href="#osnovatel">О бюро</a>
+      <a href="#praktiki">Практики</a>
+      <a href="#predprinimateli">Защита предпринимателей</a>
+      <a href="#obshestvo">Общественная деятельность</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="foot-legal">
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="terms.html">Пользовательское соглашение</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <p>ИП Бабукова Елена Яковлевна · ИНН 590773603649</p>
+    <p>© 2026 Юридическое бюро «Авторитет права»</p>
+  </div>
+</footer>
+
+<div class="paper-modal" id="paper-modal" hidden>
+  <div class="paper-backdrop" data-close></div>
+  <article class="paper-sheet" role="dialog" aria-modal="true" aria-labelledby="paper-modal-title">
+    <header class="paper-sheet-head">
+      <span class="folder-seal" aria-hidden="true">АП</span>
+      <p class="paper-brand">Юридическое бюро «Авторитет права»</p>
+      <h3 class="paper-title" id="paper-modal-title"></h3>
+    </header>
+    <div class="paper-body"></div>
+    <footer class="paper-foot">
+      <span>ФЗ-38 «О рекламе» · ст. 437 ГК РФ</span>
+      <button class="paper-close" type="button" data-close>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2 L14 14 M14 2 L2 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        Закрыть
+      </button>
+    </footer>
+  </article>
+</div>
+<button class="to-top"
+ type="button" id="to-top" aria-label="Наверх" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19 V6 M6 11.5 L12 5.5 L18 11.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<script src="assets/site.js?v=2" defer></script>
+</body>
+</html>
