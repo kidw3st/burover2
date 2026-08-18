@@ -248,7 +248,7 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
   font-weight:600;
   text-transform:uppercase;
   letter-spacing:.02em;
-  font-size:19px;
+  font-size:22px;
   white-space:nowrap;
 }
 .head-nav{margin-left:auto;display:flex;gap:clamp(16px,2.2vw,34px)}
@@ -366,6 +366,26 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   letter-spacing:.18em;
   text-transform:uppercase;
   color:var(--gold-pale);
+}
+.hero-welcome{
+  margin-top:clamp(18px,2.6vh,30px);
+  font-family:var(--serif);
+  font-style:italic;
+  font-weight:500;
+  font-size:clamp(1.15rem,1.55vw,1.5rem);
+  line-height:1.45;
+  color:var(--cream);
+  max-width:46ch;
+}
+.hero-welcome-sub{
+  margin-top:10px;
+  font-family:var(--serif);
+  font-size:clamp(1rem,1.25vw,1.25rem);
+  color:var(--gold-pale);
+  max-width:46ch;
+}
+@media (max-width:1080px){
+  .hero-welcome,.hero-welcome-sub{margin-inline:auto}
 }
 .hero-actions{
   margin-top:clamp(30px,4vh,52px);
@@ -1134,8 +1154,8 @@ body.modal-open{overflow:hidden}
   .foot-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
-  .head-row{min-height:58px}
-  .brand-name{font-size:16px;letter-spacing:.06em}
+  .head-row{min-height:60px}
+  .brand-name{font-size:19px}
   .mobile-menu{padding-top:92px}
   .hero-script .fl{display:none}
   .fl-top{display:block;width:152px;margin:0 auto 12px}
