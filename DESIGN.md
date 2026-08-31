@@ -23,13 +23,12 @@ assets/site.css). Мир закреплён брендовыми доками к
 - Дисплей: Cormorant Garamond 500-600, uppercase, `letter-spacing:-.01em`,
   `line-height:.95-.98`; герой `clamp(3.2rem,7.6vw,7.4rem)` (больше нельзя: слово
   АВТОРИТЕТ перестаёт помещаться в 7 колонок и наезжает на фото), h2 `clamp(1.85rem,5vw,4.2rem)`
-- Каллиграфия: Great Vibes 400. ЭТАЛОН = каллиграфия на постах группы
-  vk.ru/avtoritetprava (контрастный копперплейт: «Досудебное», «Процесс»),
-  Great Vibes — ближайший кириллический аналог, подтверждён пользователем
-  29.08 после сверки с постами. Пробовали и откатили: Ballet, Cormorant
-  Infant Italic, Cormorant Garamond Italic 600. На fonts.html три варианта
-  для заказчицы (Great Vibes / Playfair Italic / Marck Script). У градиентных
-  росчерков обязателен запас padding+негативные margin от срезания выносных
+- Акцентный курсив: Playfair Display Italic 600 — ВЫБОР ЗАКАЗЧИЦЫ 31.08
+  (вариант 2 со страницы fonts.html). История: Ballet, Cormorant Infant,
+  Cormorant Garamond Italic, Great Vibes пробовали и откатили. Оригинал
+  шрифта её постов = Bickham Script (Adobe): если появится embed/лицензия,
+  можно заменить на точь-в-точь. У градиентных надписей сохранён запас
+  padding+негативные margin от срезания выносных
 - Служебный: Oswald 300-400, uppercase, `letter-spacing:.08-.22em`.
   Минимальный кегль 12px (вертикальная подпись, подписи таблицы), рабочий
   диапазон 13-15px; 11px запрещён пользователем как нечитаемый. Мелкие подписи
