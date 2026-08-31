@@ -710,7 +710,13 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
 .quote-script{
   font-size:clamp(2rem,5.4vw,4.2rem);
   margin-bottom:clamp(28px,4vw,48px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(14px,2vw,30px);
+  white-space:nowrap;
 }
+.quote-script .fl{flex:0 1 auto;min-width:36px;margin:0}
 .quote-line{
   font-family:var(--serif);
   font-style:italic;
