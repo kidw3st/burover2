@@ -19,7 +19,7 @@
   --neutral:#746F69;
 
   --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
-  --script:"Great Vibes","Segoe Script",cursive;
+  --script:"Cormorant Garamond",Georgia,serif;
   --sans:"Oswald","Arial Narrow",Arial,sans-serif;
 
   --hair-dark:rgba(22,20,17,.22);
@@ -67,9 +67,10 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
 /* ---------- типографика ---------- */
 .script{
   font-family:var(--script);
-  font-weight:400;
-  letter-spacing:0;
-  line-height:1.14;
+  font-style:italic;
+  font-weight:600;
+  letter-spacing:.015em;
+  line-height:1.12;
 }
 .gold-script,.ink-script{
   padding:.1em .4em .16em .12em;
@@ -233,8 +234,9 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
   position:sticky;
   top:0;
   z-index:40;
-  background:var(--ivory);
-  border-bottom:1px solid var(--hair-dark);
+  background:var(--coal);
+  border-bottom:1px solid var(--hair-gold);
+  color:var(--cream);
 }
 .head-row{
   display:flex;
@@ -262,8 +264,9 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
   white-space:nowrap;
   padding:6px 0;
   border-bottom:1px solid transparent;
+  color:var(--gold-pale);
 }
-.head-nav a:hover,.head-nav a:focus-visible{border-bottom-color:var(--gold)}
+.head-nav a:hover,.head-nav a:focus-visible{color:var(--cream);border-bottom-color:var(--gold)}
 .head-cta{
   font-family:var(--sans);
   font-weight:400;
@@ -271,27 +274,28 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
   letter-spacing:.14em;
   text-transform:uppercase;
   text-decoration:none;
-  border:1px solid var(--ink);
+  border:1px solid var(--gold);
   padding:11px 22px;
+  color:var(--gold-pale);
 }
-.head-cta:hover,.head-cta:focus-visible{background:var(--ink);color:var(--cream)}
+.head-cta:hover,.head-cta:focus-visible{background:var(--gold);color:var(--coal)}
 
 .burger{display:none;flex-direction:column;gap:7px;padding:10px;margin-left:auto;margin-right:-10px}
 .burger span{
   display:block;
   width:26px;
   height:1px;
-  background:var(--ink);
+  background:var(--cream);
   transition:transform .4s cubic-bezier(.16,1,.3,1),width .4s cubic-bezier(.16,1,.3,1),background-color .3s ease-out;
 }
 .burger span:last-child{width:17px;align-self:flex-end}
-body.menu-open .burger span{width:26px;background:var(--gold-deep)}
+body.menu-open .burger span{width:26px;background:var(--gold)}
 
 .mobile-menu{
   position:fixed;
   inset:0;
   z-index:50;
-  background:var(--ivory);
+  background:var(--coal);
   padding:110px clamp(24px,7vw,48px) 40px;
 }
 .mobile-menu nav{display:flex;flex-direction:column;gap:4px}
@@ -302,10 +306,11 @@ body.menu-open .burger span{width:26px;background:var(--gold-deep)}
   font-size:clamp(1.5rem,6vw,2.2rem);
   text-decoration:none;
   padding:14px 0;
-  border-bottom:1px solid var(--hair-dark);
+  border-bottom:1px solid var(--hair-cream);
+  color:var(--cream);
 }
-.mobile-menu a:hover{color:var(--gold-deep)}
-.mobile-menu-cta{color:var(--gold-deep)}
+.mobile-menu a:hover{color:var(--gold-pale)}
+.mobile-menu-cta{color:var(--gold-pale)}
 body.menu-open{overflow:hidden}
 body.menu-open .site-head{z-index:60}
 body.menu-open .burger span:first-child{transform:translateY(4px) rotate(45deg)}
@@ -318,7 +323,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
 .section-dark .h-small{color:var(--gold-pale)}
 
 .section-head{padding-top:var(--pad-block);margin-bottom:clamp(48px,6vw,88px)}
-.section-head .script{font-size:clamp(2rem,3.8vw,3.1rem);margin-bottom:20px}
+.section-head .script{font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:20px}
 .section-intro{
   margin-top:26px;
   max-width:58ch;
@@ -342,7 +347,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   padding-bottom:clamp(50px,7vh,90px);
   min-height:calc(100vh - 77px);
 }
-.hero-script{font-size:clamp(2.15rem,4.4vw,3.9rem);margin-bottom:16px}
+.hero-script{font-size:clamp(1.75rem,3.4vw,2.9rem);margin-bottom:16px}
 .hero-title{
   font-family:var(--serif);
   font-weight:500;
@@ -368,14 +373,21 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   color:var(--gold-pale);
 }
 .hero-welcome{
-  margin-top:clamp(18px,2.6vh,30px);
+  margin-top:clamp(20px,2.8vh,34px);
   font-family:var(--serif);
   font-style:italic;
-  font-weight:500;
-  font-size:clamp(1.15rem,1.55vw,1.5rem);
-  line-height:1.45;
+  font-weight:600;
+  font-size:clamp(1.3rem,1.9vw,1.8rem);
+  line-height:1.4;
   color:var(--cream);
-  max-width:46ch;
+  max-width:44ch;
+}
+.gold-word{
+  font-style:inherit;
+  background:linear-gradient(112deg,var(--gold-hi) 8%,var(--gold) 55%,var(--gold-deep) 95%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
 }
 .hero-welcome-sub{
   margin-top:10px;
@@ -449,7 +461,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   .founder-photo{align-self:stretch}
   .founder-photo .media{height:100%;aspect-ratio:auto !important}
 }
-.founder-script{font-size:clamp(2.5rem,4.8vw,4.1rem);margin-bottom:18px}
+.founder-script{font-size:clamp(2rem,3.8vw,3.2rem);margin-bottom:18px}
 .founder-text{
   margin-top:clamp(26px,3vw,42px);
   display:grid;
@@ -513,7 +525,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   padding:clamp(48px,6vw,92px) 0;
 }
 .practices .wrap > .practice:last-of-type{border-bottom:1px solid var(--hair-dark);margin-bottom:var(--pad-block)}
-.practice-script{font-size:clamp(1.8rem,3.3vw,2.7rem);margin-bottom:12px}
+.practice-script{font-size:clamp(1.45rem,2.6vw,2.1rem);margin-bottom:12px}
 .practice-body{display:grid;gap:clamp(28px,3.4vw,44px);align-content:start}
 .practice-photo{
   position:relative;
@@ -551,6 +563,16 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   font-size:1rem;
 }
 .compare-row p + p{border-left:1px solid var(--hair-dark)}
+.compare-hint{
+  display:none;
+  font-family:var(--sans);
+  font-weight:300;
+  font-size:12px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--neutral);
+  margin-top:10px;
+}
 .compare-head p{
   font-family:var(--serif);
   font-weight:600;
@@ -664,7 +686,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
 }
 .foot-script{
   margin-top:8px;
-  font-size:26px;
+  font-size:22px;
 }
 
 /* ---------- цитата ---------- */
@@ -674,11 +696,19 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   text-align:center;
   padding:clamp(72px,9vw,140px) 0;
 }
+.quote-frame{
+  max-width:880px;
+  margin-inline:auto;
+  padding:clamp(36px,5vw,64px) clamp(20px,4vw,56px);
+  border:1px solid var(--hair-gold);
+  outline:1px solid rgba(200,151,72,.22);
+  outline-offset:7px;
+}
 .quote-band + .gallery-section .section-head{
   padding-top:clamp(48px,6vw,88px);
 }
 .quote-script{
-  font-size:clamp(2.8rem,7.8vw,6.4rem);
+  font-size:clamp(2.1rem,5.6vw,4.4rem);
   margin-bottom:clamp(28px,4vw,48px);
 }
 .quote-line{
@@ -757,7 +787,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   align-items:center;
   padding-block:var(--pad-block);
 }
-.contacts .script{font-size:clamp(2.1rem,4vw,3.3rem);margin-bottom:18px}
+.contacts .script{font-size:clamp(1.7rem,3.2vw,2.6rem);margin-bottom:18px}
 .contacts .lead{margin-top:26px;color:var(--gold-pale)}
 .contact-data{
   margin-top:clamp(34px,4vw,54px);
@@ -1166,17 +1196,11 @@ body.modal-open{overflow:hidden}
   .hero-facts{grid-template-columns:1fr;gap:0}
   .hero-facts p{border-top:1px solid var(--hair-cream);padding:12px 0;max-width:none;text-align:center}
   .hero-facts p:first-child{border-top:0}
-  .compare-row{grid-template-columns:1fr}
-  .compare-row p + p{border-left:0;border-top:1px solid var(--hair-dark)}
-  .compare-head{display:none}
-  .compare-row p::before{
-    content:attr(data-col);
-    display:block;
-    font-family:var(--serif);
-    font-weight:600;
-    text-transform:uppercase;
-    margin-bottom:6px;
-  }
+  /* сравнительная таблица остаётся таблицей: две колонки, скролл по горизонтали */
+  .compare{overflow-x:auto;scrollbar-width:thin}
+  .compare::-webkit-scrollbar{height:7px}
+  .compare-row{min-width:520px}
+  .compare-hint{display:block}
   .two-col{column-count:1}
   .service-list li{grid-template-columns:1fr}
   /* галереи-карусели: свайп, следующий кадр выглядывает сбоку */
