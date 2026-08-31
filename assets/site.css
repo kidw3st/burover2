@@ -1077,6 +1077,79 @@ body.modal-open{overflow:hidden}
   color:var(--gold-pale);
 }
 
+/* ---------- страница партнёров ---------- */
+.partners-hero{
+  background:var(--coal);
+  color:var(--cream);
+  border-bottom:1px solid var(--hair-gold);
+  padding:clamp(64px,8vw,120px) 0;
+}
+.partners-hero .script{font-size:clamp(1.65rem,3.1vw,2.5rem);margin-bottom:14px}
+.partner-list{padding-block:clamp(56px,7vw,104px)}
+.partners-note{margin-bottom:clamp(36px,4vw,56px)}
+.partner-slot{
+  display:grid;
+  grid-template-columns:minmax(0,4fr) minmax(0,7fr);
+  gap:clamp(28px,4vw,72px);
+  border-top:1px solid var(--hair-dark);
+  padding-block:clamp(40px,5vw,72px);
+}
+.partner-list .partner-slot:last-of-type{border-bottom:1px solid var(--hair-dark)}
+.partner-ph{position:relative;max-width:380px}
+.ph-box{
+  display:grid;
+  place-items:center;
+  align-content:center;
+  gap:18px;
+  aspect-ratio:4/5;
+  background:linear-gradient(180deg,#E8DBC4 0%,#DECFB3 100%);
+  border:1px solid rgba(99,57,30,.4);
+  padding:24px;
+}
+.ph-mark{width:44px;height:44px;color:var(--gold-deep)}
+.ph-text{
+  font-family:var(--sans);
+  font-weight:400;
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--bronze);
+  text-align:center;
+  max-width:22ch;
+  line-height:1.8;
+}
+.partner-script{font-size:clamp(1.3rem,2.2vw,1.7rem);margin-bottom:8px}
+.partner-name{
+  font-family:var(--serif);
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  font-size:clamp(1.5rem,2.6vw,2.1rem);
+  color:var(--neutral);
+}
+.partner-form{margin-top:clamp(22px,3vw,36px);display:grid}
+.partner-form > div{
+  display:grid;
+  grid-template-columns:minmax(180px,240px) 1fr;
+  gap:20px;
+  align-items:end;
+  padding:20px 0;
+  border-top:1px solid var(--hair-dark);
+}
+.partner-form dt{
+  font-family:var(--sans);
+  font-weight:400;
+  font-size:13px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--smoke);
+}
+.fieldline{display:block;height:1px;background:var(--hair-gold);margin-bottom:5px}
+.partners-cta{padding-block:clamp(64px,8vw,120px)}
+.partners-cta .script{font-size:clamp(1.5rem,2.6vw,2rem);margin-bottom:12px}
+.partners-cta .lead{margin-top:22px}
+.partners-cta-btn{margin-top:clamp(28px,3.4vw,44px)}
+
 /* ---------- страницы документов ---------- */
 .doc-main{padding-block:clamp(64px,8vw,120px)}
 .doc-main .h-display{margin-bottom:10px}
@@ -1178,6 +1251,8 @@ body.modal-open{overflow:hidden}
   .contacts-grid{grid-template-columns:1fr}
   .qr-figure{justify-self:start}
   .dossiers{grid-template-columns:1fr;max-width:560px}
+  .partner-slot{grid-template-columns:1fr}
+  .partner-ph{max-width:320px}
   .mosaic{grid-template-columns:repeat(2,1fr)}
   .mosaic figure:last-child:nth-child(odd){grid-column:1/-1}
   .mosaic figure:last-child:nth-child(odd) .media{aspect-ratio:3/2 !important}
@@ -1216,6 +1291,7 @@ body.modal-open{overflow:hidden}
   .mosaic figure.wide{flex:0 0 78%}
   .mosaic .media,.mosaic figure.wide .media{aspect-ratio:4/5 !important}
   .mosaic::-webkit-scrollbar{height:7px}
+  .partner-form > div{grid-template-columns:1fr;gap:14px}
   .quote-script{white-space:nowrap;font-size:clamp(1.85rem,8.4vw,2.6rem)}
   .quote-script .fl{display:none}
   .foot-grid{grid-template-columns:1fr;justify-items:center;text-align:center}
