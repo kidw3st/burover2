@@ -91,11 +91,6 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
   margin-left:.4em;
 }
 .quote-script .fl{width:clamp(64px,8.5vw,150px)}
-.fl-top{display:none}
-.fl-sym{display:none}
-@media (max-width:1080px) and (min-width:561px){
-  .fl-sym{display:inline-block}
-}
 .gold-script{
   background:linear-gradient(112deg,var(--gold-hi) 8%,var(--gold) 46%,var(--gold-deep) 88%);
   -webkit-background-clip:text;
@@ -347,7 +342,33 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   padding-bottom:clamp(50px,7vh,90px);
   min-height:calc(100vh - 77px);
 }
-.hero-script{font-size:clamp(1.7rem,3.3vw,2.8rem);margin-bottom:16px}
+.hero-emblem{
+  width:clamp(112px,13vw,150px);
+  margin-bottom:8px;
+}
+.hero-emblem img{width:100%;display:block}
+.hero-script{
+  font-size:clamp(1.7rem,3.3vw,2.8rem);
+  margin-bottom:16px;
+  display:flex;
+  align-items:center;
+  gap:clamp(14px,1.6vw,26px);
+  background-size:220% 100%;
+  animation:gold-sheen 7s ease-in-out infinite;
+}
+.hero-script::before,.hero-script::after{
+  content:"";
+  flex:1 1 0;
+  max-width:clamp(36px,4.5vw,88px);
+  height:1px;
+}
+.hero-script-text{white-space:nowrap}
+.hero-script::before{background:linear-gradient(90deg,transparent,var(--gold))}
+.hero-script::after{background:linear-gradient(90deg,var(--gold),transparent)}
+@keyframes gold-sheen{
+  0%,100%{background-position:0% 0}
+  50%{background-position:100% 0}
+}
 .hero-title{
   font-family:var(--serif);
   font-weight:500;
@@ -1282,6 +1303,7 @@ body.modal-open{overflow:hidden}
 
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
+  .hero-script{animation:none}
   .reveal{opacity:1;transform:none;transition:none}
   .media::after{animation:none}
   .media.loaded img{transition:none}
@@ -1298,6 +1320,8 @@ body.modal-open{overflow:hidden}
 @media (max-width:1080px){
   .hero-grid{grid-template-columns:1fr;min-height:0}
   .hero-copy{text-align:center}
+  .hero-emblem{margin-inline:auto}
+  .hero-script{justify-content:center}
   .hero-title{align-items:center;margin-inline:auto}
   .hero-title span:last-child{align-self:center}
   .hero-line{margin-inline:auto;max-width:34ch}
@@ -1320,9 +1344,6 @@ body.modal-open{overflow:hidden}
   .head-row{min-height:60px}
   .brand-name{font-size:19px}
   .mobile-menu{padding-top:92px}
-  .hero-script .fl{display:none}
-  .fl-top{display:block;width:152px;margin:0 auto 12px}
-  .fl-top svg{display:block;width:100%;height:auto}
 }
 @media (max-width:640px){
   body{font-size:17px}
