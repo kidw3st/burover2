@@ -734,6 +734,58 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   color:var(--gold-pale);
 }
 
+/* ---------- приоритеты бюро (тёмная секция) ---------- */
+.priority-list{
+  margin-top:clamp(26px,3.4vw,44px);
+  max-width:780px;
+}
+.priority-list li{
+  position:relative;
+  padding:15px 0 15px 36px;
+  border-top:1px solid var(--hair-cream);
+  font-size:1.05rem;
+  line-height:1.55;
+  color:var(--gold-pale);
+}
+.priority-list li:last-child{border-bottom:1px solid var(--hair-cream)}
+.priority-list li::before{
+  content:"";
+  position:absolute;
+  left:7px;
+  top:1.45em;
+  width:9px;
+  height:9px;
+  border:1px solid var(--gold);
+  transform:rotate(45deg);
+}
+.priority-list strong{
+  font-weight:600;
+  color:var(--cream);
+}
+
+/* цитата в общественной деятельности */
+.ob-quote{
+  margin-top:24px;
+  font-family:var(--script);
+  font-style:italic;
+  font-weight:600;
+  font-size:clamp(1.25rem,2vw,1.65rem);
+  color:var(--gold-deep);
+  max-width:36ch;
+}
+
+/* лозунги практик */
+.practice-motto{
+  margin-top:14px;
+  font-family:var(--serif);
+  font-style:italic;
+  font-weight:500;
+  font-size:clamp(1.05rem,1.45vw,1.3rem);
+  line-height:1.5;
+  color:var(--gold-deep);
+  max-width:36ch;
+}
+
 /* ---------- галереи ---------- */
 .gallery-section{padding-bottom:var(--pad-block)}
 .mosaic{
