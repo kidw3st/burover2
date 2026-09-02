@@ -807,6 +807,7 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
 .mosaic{
   display:grid;
   grid-template-columns:repeat(3,1fr);
+  grid-auto-flow:dense;
   gap:clamp(16px,2vw,28px);
 }
 .mosaic .media{aspect-ratio:4/5 !important}
