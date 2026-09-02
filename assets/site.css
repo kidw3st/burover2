@@ -767,12 +767,13 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
 .priority-list li::before{
   content:"";
   position:absolute;
-  left:7px;
-  top:1.45em;
-  width:9px;
-  height:9px;
-  border:1px solid var(--gold);
-  transform:rotate(45deg);
+  left:4px;
+  top:1.35em;
+  width:13px;
+  height:7px;
+  border-left:1.5px solid var(--gold);
+  border-bottom:1.5px solid var(--gold);
+  transform:rotate(-45deg);
 }
 .priority-list strong{
   font-weight:600;
