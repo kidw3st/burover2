@@ -342,11 +342,6 @@ body.menu-open .burger span:last-child{transform:translateY(-4px) rotate(-45deg)
   padding-bottom:clamp(50px,7vh,90px);
   min-height:calc(100vh - 77px);
 }
-.hero-emblem{
-  width:clamp(112px,13vw,150px);
-  margin-bottom:8px;
-}
-.hero-emblem img{width:100%;display:block}
 .hero-script{
   font-size:clamp(1.7rem,3.3vw,2.8rem);
   margin-bottom:16px;
@@ -1320,7 +1315,6 @@ body.modal-open{overflow:hidden}
 @media (max-width:1080px){
   .hero-grid{grid-template-columns:1fr;min-height:0}
   .hero-copy{text-align:center}
-  .hero-emblem{margin-inline:auto}
   .hero-script{justify-content:center}
   .hero-title{align-items:center;margin-inline:auto}
   .hero-title span:last-child{align-self:center}
